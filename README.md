@@ -1,4 +1,4 @@
-# Visual List Directory (vls)
+# Visual List Directory (VLS)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ayukistudio/Visual-List-Directory/refs/heads/main/media/vlslogo_dark.png">
