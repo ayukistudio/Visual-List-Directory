@@ -70,6 +70,7 @@ It builds the same targets as `build.bat`:
 ```batch
 cmake -B build
 cmake --build build
+```
 
 ## Compatibility
 
