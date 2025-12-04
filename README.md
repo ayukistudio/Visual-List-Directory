@@ -49,15 +49,27 @@ vls ..           # List parent directory
 - Windows XP or later
 - GCC compiler (MinGW/MinGW-w64) for building
 
-## Building
+## Building with CMake
 
-The project includes a simple build script:
+VLS also includes a clean Windows-only CMake configuration.  
+It builds the same targets as `build.bat`:
+
+- **vls64.exe** — Windows 64-bit  
+- **vls32.exe** — Windows 32-bit  
+- **vls7.exe** — Windows 7 (NT 6.1)  
+- **vlsXP.exe** — Windows XP (NT 5.1, static)  
+
+### Requirements
+
+- CMake 3.10+
+- MinGW-w64 GCC toolchain (32-bit + 64-bit)
+- Windows XP or later
+
+### Build Steps
 
 ```batch
-build.bat
-```
-
-This compiles `vls.c` into an optimized executable. The resulting binary is around 20-30 KB.
+cmake -B build
+cmake --build build
 
 ## Compatibility
 
